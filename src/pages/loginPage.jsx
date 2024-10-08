@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
   return (
@@ -46,9 +47,11 @@ function LoginPage() {
           Hỏi AI về bài tập hoặc kiến thức bạn đang quan tâm
         </p>
         <div className="flex justify-center">
-          <button className="bg-white text-blue-600 px-4 py-2 rounded-full font-bold">
-            Đặt câu hỏi ngay
-          </button>
+          <Link to="/questionPage">
+            <button className="bg-white text-blue-600 px-4 py-2 rounded-full font-bold">
+              Đặt câu hỏi ngay
+            </button>
+          </Link>
         </div>
       </div>
       <div className="bg-white shadow-lg rounded-lg p-6 w-full h-full max-w-screen-lg mt-8 mx-auto">
@@ -114,10 +117,13 @@ function LoginPage() {
               </td>
               <td class="px-4 py-2">19/07/2024 15:04</td>
               <td class="px-4 py-2 text-green-600">Hoàn thành</td>
+
               <td class="px-4 py-2 ">
-                <button class="gradient text-white py-1 px-4 rounded">
-                  Xem chi tiết
-                </button>
+                <Link to="/AnswerPage">
+                  <button class="gradient text-white py-1 px-4 rounded">
+                    Xem chi tiết
+                  </button>
+                </Link>
               </td>
             </tr>
 
@@ -131,11 +137,13 @@ function LoginPage() {
               </td>
               <td class="px-4 py-2">19/07/2024 15:04</td>
               <td class="px-4 py-2 text-gray-600">Đang xử lý</td>
-              <td class="px-4 py-2 ">
-                <button class="gradient text-white py-1 px-4 rounded">
-                  Xem chi tiết
-                </button>
-              </td>
+              <Link to="/AnswerPage">
+                <td class="px-4 py-2 ">
+                  <button class="gradient text-white py-1 px-4 rounded">
+                    Xem chi tiết
+                  </button>
+                </td>
+              </Link>
             </tr>
           </tbody>
         </table>

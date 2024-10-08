@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -23,7 +24,9 @@ function Header() {
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <img src="./image/logo.png" alt="logo" className="h-8 sm:h-10" />
+          <Link to="/loginPage">
+            <img src="./image/logo.png" alt="logo" className="h-8 sm:h-10" />
+          </Link>
         </div>
       </div>
     </div>
