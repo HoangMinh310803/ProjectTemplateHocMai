@@ -120,7 +120,7 @@ function LoginPage() {
 
               <td class="px-4 py-2 ">
                 <Link to="/AnswerPage">
-                  <button class="gradient text-white py-1 px-4 rounded">
+                  <button class="btn-blue-gradient btn-blue-gradient:hover btn-blue-gradient:focus btn-blue-gradient:focus.dark">
                     Xem chi tiết
                   </button>
                 </Link>
@@ -139,7 +139,7 @@ function LoginPage() {
               <td class="px-4 py-2 text-gray-600">Đang xử lý</td>
               <Link to="/AnswerPage">
                 <td class="px-4 py-2 ">
-                  <button class="gradient text-white py-1 px-4 rounded">
+                  <button class="btn-blue-gradient btn-blue-gradient:hover btn-blue-gradient:focus btn-blue-gradient:focus.dark">
                     Xem chi tiết
                   </button>
                 </td>

@@ -10,58 +10,58 @@ function AnswerPage() {
       <div className="pt-8 px-28 mb-24">
         <h1>Trang chủ/ kết quả iChat</h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mb-14 gap-x-6 max-w-screen-lg mx-auto">
-        <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
-          <div class="flex items-center space-x-2">
+      <div class="grid grid-cols-1 lg:grid-cols-2 mb-14 gap-6 max-w-screen-lg mx-auto">
+        <div class="bg-white shadow-lg rounded-lg p-6 max-w-lg w-full">
+          <div class="flex items-center space-x-2 mb-6">
             <img src="./image/arrow-circle-left.png" alt="" class="w-12 h-12" />
-            <h1 class="text-xl font-semibold">Đặt 1 câu hỏi mới</h1>
+            <h1 class="text-xl font-semibold">Đặt 1 câu hỏi mới</h1>
           </div>
 
-          <div className="flex items-center gap-36">
-            <div className="flex items-center gap-2">
+          <div class="flex justify-between mb-4">
+            <div class="flex items-center space-x-2">
               <img src="./image/book.png" alt="" />
-              <h2>Môn học</h2>
+              <h2>Môn học</h2>
             </div>
-            <div className="flex items-center gap-2">
+            <div class="flex items-center space-x-2">
               <img src="./image/message-question.png" alt="" />
-              <h2>Loại câu hỏi</h2>
+              <h2>Loại câu hỏi</h2>
             </div>
           </div>
 
-          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-6 gap-4 mt-4">
-            <select class="bg-gray-50 border border-gray-300 rounded-lg w-full sm:w-auto sm:flex-1">
-              <option>Chọn môn học</option>
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:gap-6 gap-4 mb-4">
+            <select class="bg-gray-50 border border-gray-300 rounded-lg w-full sm:w-auto sm:flex-1 p-2.5">
+              <option>Chọn môn học</option>
             </select>
-            <select class="bg-gray-50 border border-gray-300 rounded-lg w-full sm:w-auto sm:flex-1">
-              <option>Chọn loại câu hỏi</option>
+            <select class="bg-gray-50 border border-gray-300 rounded-lg w-full sm:w-auto sm:flex-1 p-2.5">
+              <option>Chọn loại câu hỏi</option>
             </select>
           </div>
 
-          <form class="max-w-sm mx-auto mt-4">
-            <div class="flex items-center gap-1">
+          <form class="mb-4">
+            <div class="flex items-center gap-2 mb-2">
               <img src="./image/clipboard-text.png" alt="" />
-              <label class="block mb-2 text-sm font-medium text-gray-900 mt-2">
-                Mệnh đề sử dụng
+              <label class="text-sm font-medium text-gray-900">
+                Mệnh đề sử dụng
               </label>
             </div>
             <select
               disabled
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-full p-2.5"
             >
-              <option selected>Nhờ thầy cô chứng minh công thức sau</option>
+              <option selected>Nhờ thầy cô chứng minh công thức sau</option>
             </select>
           </form>
 
-          <div class="mb-4 mt-4">
-            <div class="flex items-center gap-1">
+          <div class="mb-4">
+            <div class="flex items-center gap-2 mb-2">
               <img src="./image/pen.png" alt="" />
-              <label class="block mb-2 text-sm font-medium text-gray-900 mt-2">
-                Nội dung câu hỏi của bạn
+              <label class="text-sm font-medium text-gray-900">
+                Nội dung câu hỏi của bạn
               </label>
             </div>
             <textarea
               rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300"
+              class="block w-full p-2.5 text-sm text-gray-900 bg-white rounded-lg border border-gray-300"
             ></textarea>
             <div class="flex items-center mt-2">
               <img
@@ -75,22 +75,38 @@ function AnswerPage() {
             </div>
           </div>
 
-          <div class="flex justify-center mt-4">
-            <button class=" text-white font-bold py-2 px-4 rounded-full transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-              Gửi câu hỏi
+          <div class="flex justify-center">
+            <button class="text-white font-bold py-2 px-4 rounded-full transition ease-in-out bg-blue-500 hover:bg-indigo-500 duration-300">
+              Gửi câu hỏi
             </button>
           </div>
         </div>
-        <div>
-          <div className="bg-sky-600 shadow-lg rounded-lg p-6 w-full max-w-lg">
-            <h1 className="text-xl font-semibold text-white mb-7">Kết quả</h1>
-            <h2 className="text-white">Trả lời câu hỏi của bạn</h2>
-            <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
-              <p className="text-gray-950">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua...
+
+        <div class="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 shadow-lg rounded-lg p-6 max-w-lg w-full">
+          <h1 class="text-xl font-semibold text-white mb-6">Kết quả</h1>
+          <h2 class="text-white mb-4">Trả lời câu hỏi của bạn</h2>
+          <div class="bg-white rounded-lg p-4 shadow-lg mb-6 w-full h-[500px] overflow-y-auto">
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitationLorem ipsum dolor
+              si
+            </p>
+            <hr class="my-4" />
+            <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+              <p class="text-gray-600 mb-2">
+                Bạn đánh giá thế nào về câu trả lời này?
               </p>
-              <hr />
+              <div class="flex items-center space-x-2 mb-4">
+                <i class="text-yellow-400">★</i>
+                <i class="text-yellow-400">★</i>
+                <i class="text-yellow-400">★</i>
+                <i class="text-gray-400">★</i>
+                <i class="text-gray-400">★</i>
+              </div>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+                Gửi đánh giá
+              </button>
             </div>
           </div>
         </div>

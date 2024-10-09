@@ -86,7 +86,7 @@ function AnswerProcessPage() {
             </div>
 
             <div className="flex justify-center mt-4">
-              <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+              <button className="btn-blue-gradient btn-blue-gradient:hover btn-blue-gradient:focus btn-blue-gradient:focus.dark">
                 Gửi câu hỏi
               </button>
             </div>
